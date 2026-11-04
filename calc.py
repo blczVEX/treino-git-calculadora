@@ -7,6 +7,11 @@ def subtrair(a, b):
 def multiplicar(a, b):
     return a * b
 
+def dividir(a, b):
+    if b == 0:
+        return "Erro: divisão por zero!"
+    return a / b
+
 if __name__ == "__main__":
     print("--- Calculadora CLI ---")
     num1 = float(input("Primeiro número: "))
@@ -14,3 +19,4 @@ if __name__ == "__main__":
     print(f"Soma: {somar(num1, num2)}")
     print(f"Subtração: {subtrair(num1, num2)}")
     print(f"Multiplicação: {multiplicar(num1, num2)}")
+    print(f"Divisão: {dividir(num1, num2)}")
